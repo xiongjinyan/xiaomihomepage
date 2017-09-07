@@ -1,0 +1,1353 @@
+.toper {
+  height: 40px;
+  background-color: #333;
+}
+.toper .top {
+  position: relative;
+  height: 40px;
+}
+.toper .top .list {
+  display: inline-block;
+}
+.toper .top .list > ul {
+  height: 100%;
+}
+.toper .top .list > ul li {
+  float: left;
+  margin-right: 6px;
+  line-height: 40px;
+}
+.toper .top .list > ul li > a:hover {
+  color: #fff;
+}
+.toper .top .enter {
+  display: inline-block;
+  position: absolute;
+  right: 140px;
+}
+.toper .top .enter ul {
+  height: 100%;
+  float: right;
+}
+.toper .top .enter ul li {
+  line-height: 40px;
+  float: left;
+  margin-right: 4px;
+}
+.toper .top .enter ul li a:hover {
+  color: #fff;
+}
+.toper .top .buyCar {
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+  background-color: #424242;
+  position: absolute;
+  right: 0px;
+  line-height: 40px;
+  text-align: center;
+}
+.toper .top .buyCar:hover a {
+  background-color: #fff;
+  color: orange;
+}
+.toper .top .buyCar::after {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  content: "购物车中还没有商品，赶快选购吧！";
+  right: 0;
+  width: 316px;
+  height: 0;
+  line-height: 96px;
+  transition: all 1s;
+  overflow: hidden;
+  background-color: #fff;
+}
+.toper .top .buyCar:hover::after {
+  display: block;
+  height: 96px;
+  box-shadow: 0 0 3px 1px #ccc;
+}
+.toper .top .buyCar a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.toper .top .buyCar a i {
+  font-size: 16px;
+}
+.nav-top {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+.nav-top .nav-type {
+  position: relative;
+  height: 100%;
+  line-height: 100px;
+}
+.nav-top .nav-type div {
+  float: left;
+}
+.nav-top .nav-type div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav-top .nav-type div > a > img {
+  vertical-align: middle;
+}
+.nav-top .nav-type .nav-list {
+  width: 656px;
+  height: 100px;
+  margin-left: 5px;
+}
+.nav-top .nav-type .nav-list ul {
+  width: 100%;
+  height: 100%;
+}
+.nav-top .nav-type .nav-list ul li {
+  float: left;
+}
+.nav-top .nav-type .nav-list ul li > a {
+  display: block;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+}
+.nav-top .nav-type .nav-list ul li > a:hover {
+  color: red;
+}
+.nav-top .nav-type .nav-find {
+  position: absolute;
+  width: 297px;
+  height: 52px;
+  border: 1px solid #ccc;
+  right: 0;
+  top: 25px;
+}
+.nav-top .nav-type .nav-find input {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  height: 50px;
+  width: 80px;
+}
+.nav-top .nav-type .nav-find > ul:nth-of-type(1) {
+  position: absolute;
+  right: 60px;
+  line-height: 52px;
+}
+.nav-top .nav-type .nav-find > ul:nth-of-type(1) > li {
+  float: left;
+  margin-left: 5px;
+}
+.nav-top .nav-type .nav-find > ul:nth-of-type(1) > li a {
+  background-color: #eee;
+  color: #757575;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+.nav-top .nav-type .nav-find > ul:nth-of-type(1) > li a:hover {
+  background-color: darkorange;
+  color: #fff;
+}
+.nav-top .nav-type .nav-find .look {
+  display: block;
+  width: 52px;
+  height: 52px;
+  float: right;
+  border-left: 1px solid #ccc;
+  margin-top: -1px;
+}
+.nav-top .nav-type .nav-find .look i {
+  display: block;
+  color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 52px;
+  font-size: 25px;
+}
+.nav-top .nav-type .nav-find .look i:hover {
+  cursor: pointer;
+  background-color: darkorange;
+  color: #fff;
+}
+.nav-top .nav-type .nav-find .down-list {
+  display: none;
+  position: absolute;
+  z-index: 990;
+  width: 245px;
+  height: 302px;
+  border: 1px solid darkorange;
+  top: 50px;
+  left: -1px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+.nav-top .nav-type .nav-find .down-list li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.nav-top .nav-type .nav-find .down-list li a {
+  color: black;
+}
+.nav-top .nav-type .nav-find .down-list li a span {
+  color: #ccc;
+  float: right;
+  font-size: 12px;
+}
+.nav-buttom {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 230px;
+  box-shadow: 0 0 8px 1px #ccc;
+  background-color: #fff;
+}
+.nav-buttom .careful-list {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 147px;
+  text-align: center;
+}
+.nav-buttom .careful-list li {
+  float: left;
+  width: 221px;
+  height: 110px;
+}
+.nav-buttom .careful-list li:last-of-type a {
+  border-right: none;
+}
+.nav-buttom .careful-list li a {
+  display: block;
+  width: 100%;
+  border-right: 1px solid #ccc;
+}
+.nav-buttom .careful-list li a img {
+  width: 160px;
+  height: 110px;
+}
+.nav-buttom .careful-list li div {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+.nav-buttom .careful-list li div span {
+  display: block;
+  line-height: 25px;
+}
+.nav-buttom .careful-list li div span:nth-of-type(1) {
+  color: black;
+}
+.nav-buttom .careful-list li div span:nth-of-type(2) {
+  color: darkorange;
+}
+.banner {
+  height: 460px;
+  width: 100%;
+  background-color: #fff;
+}
+.banner-lunbo {
+  position: relative;
+  height: 460px;
+  background-color: navajowhite;
+}
+.banner-lunbo .line-list {
+  position: absolute;
+  z-index: 2;
+  width: 235px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.banner-lunbo .line-list > ul {
+  width: 100%;
+  padding: 25px 0;
+}
+.banner-lunbo .line-list > ul li {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+}
+.banner-lunbo .line-list > ul li:hover {
+  background-color: #ff6700;
+}
+.banner-lunbo .line-list > ul li a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.banner-lunbo .row-list {
+  z-index: 990;
+  display: none;
+  left: 235px;
+  position: absolute;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  background-color: #fff;
+}
+.banner-lunbo .row-list > ul {
+  height: 100%;
+  float: left;
+}
+.banner-lunbo .row-list > ul > li {
+  position: relative;
+  height: 76px;
+  width: 265px;
+  line-height: 76px;
+  margin: 0 20px;
+}
+.banner-lunbo .row-list > ul > li > a:nth-of-type(1) {
+  display: inline-block;
+}
+.banner-lunbo .row-list > ul > li > a:nth-of-type(1) img {
+  vertical-align: middle;
+}
+.banner-lunbo .row-list > ul > li > a:nth-of-type(1) span {
+  font-size: 14px;
+  color: black;
+}
+.banner-lunbo .row-list > ul > li > a:nth-of-type(2) {
+  position: absolute;
+  width: 58px;
+  height: 22px;
+  border: 1px solid #ff6700;
+  line-height: 22px;
+  text-align: center;
+  color: #ff6700;
+  right: 0;
+  top: 24px;
+}
+.banner-lunbo .row-list > ul > li > a:nth-of-type(2):hover {
+  background-color: #ff6700;
+  color: #fff;
+}
+.banner-lunbo .lunbo-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.banner-lunbo .lunbo-list > ul li {
+  position: absolute;
+}
+.banner-lunbo .arrows-left {
+  position: absolute;
+  z-index: 990;
+  width: 40px;
+  height: 70px;
+  left: 235px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-lunbo .arrows-left i {
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+.banner-lunbo .arrows-left:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.banner-lunbo .arrows-right {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 990;
+}
+.banner-lunbo .arrows-right i {
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+.banner-lunbo .arrows-right:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.sub {
+  background-color: #fff;
+}
+.top-sub {
+  height: 210px;
+  padding-top: 14px;
+}
+.top-sub .sprite {
+  float: left;
+  width: 235px;
+  height: 170px;
+  background-color: #5f5750;
+}
+.top-sub .sprite > ul {
+  width: 100%;
+  height: 100%;
+}
+.top-sub .sprite > ul > li {
+  position: relative;
+  float: left;
+  width: 33.3333%;
+  height: 50%;
+}
+.top-sub .sprite > ul > li > a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.top-sub .sprite > ul > li > a:hover {
+  color: #fff;
+}
+.top-sub .sprite > ul > li > a i {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.top-sub .sprite > ul > li > .line {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 0;
+  top: 15px;
+}
+.top-sub .sprite > ul > li > .row {
+  position: absolute;
+  height: 1px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  bottom: 0;
+  left: 25px;
+}
+.top-sub > ul {
+  float: right;
+}
+.top-sub > ul li {
+  float: left;
+  margin-left: 14px;
+}
+.top-sub > ul li a img {
+  width: 316px;
+  height: 170px;
+}
+#goods {
+  background-color: #f5f5f5;
+}
+#goods .hardware {
+  width: 1226px;
+  height: 672px;
+  margin-bottom: 50px;
+}
+#goods .hardware .hardware-title {
+  width: 100%;
+  height: 58px;
+}
+#goods .hardware .hardware-title > span {
+  line-height: 58px;
+  font-size: 24px;
+  color: black;
+}
+#goods .hardware .hardware-title > a {
+  display: block;
+  float: right;
+  color: black;
+  font-size: 16px;
+  line-height: 58px;
+  text-decoration: none;
+}
+#goods .hardware .hardware-title > a:hover {
+  color: red;
+}
+#goods .hardware .hardware-list {
+  width: 100%;
+  height: 614px;
+}
+#goods .hardware .hardware-list .hardware-list-left {
+  float: left;
+  height: 100%;
+  width: 234px;
+}
+#goods .hardware .hardware-list .hardware-list-left > a > img {
+  transition: all .3s;
+}
+#goods .hardware .hardware-list .hardware-list-left > a > img:hover {
+  box-shadow: 3px 3px 10px 5px #ccc;
+  transform: translateY(-5px);
+}
+#goods .hardware .hardware-list .hardware-list-right {
+  width: 992px;
+  height: 100%;
+  float: right;
+}
+#goods .hardware .hardware-list .hardware-list-right > div {
+  position: relative;
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-bottom: 15px;
+  float: left;
+  transition: all .3s;
+}
+#goods .hardware .hardware-list .hardware-list-right > div:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .hardware .hardware-list .hardware-list-right > div > span {
+  position: absolute;
+  padding: 2px 20px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#goods .hardware .hardware-list .hardware-list-right > div .new {
+  background-color: green;
+}
+#goods .hardware .hardware-list .hardware-list-right > div .free {
+  background-color: orange;
+}
+#goods .hardware .hardware-list .hardware-list-right > div .discount {
+  background-color: red;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > a {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > a > img {
+  width: 160px;
+  height: 160px;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > a > h5 {
+  margin-top: 12px;
+  color: black;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > p {
+  text-align: center;
+  margin-top: 16px;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > .safe {
+  color: #666;
+}
+#goods .hardware .hardware-list .hardware-list-right > div > .num {
+  color: red;
+  font-size: 16px;
+}
+#goods .match-list,
+#goods .accessories-list,
+#goods .ambitus-list {
+  height: 672px;
+}
+#goods .match-list .match-top,
+#goods .accessories-list .match-top,
+#goods .ambitus-list .match-top {
+  height: 58px;
+  width: 100%;
+}
+#goods .match-list .match-top h3,
+#goods .accessories-list .match-top h3,
+#goods .ambitus-list .match-top h3 {
+  display: inline-block;
+  color: black;
+  line-height: 58px;
+}
+#goods .match-list .match-top ul,
+#goods .accessories-list .match-top ul,
+#goods .ambitus-list .match-top ul {
+  float: right;
+  line-height: 55px;
+}
+#goods .match-list .match-top ul li,
+#goods .accessories-list .match-top ul li,
+#goods .ambitus-list .match-top ul li {
+  float: left;
+  margin-left: 30px;
+}
+#goods .match-list .match-top ul li a,
+#goods .accessories-list .match-top ul li a,
+#goods .ambitus-list .match-top ul li a {
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+}
+#goods .match-list .match-top ul li a.active,
+#goods .accessories-list .match-top ul li a.active,
+#goods .ambitus-list .match-top ul li a.active {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+#goods .match-list .match-nav,
+#goods .accessories-list .match-nav,
+#goods .ambitus-list .match-nav {
+  height: 615px;
+  width: 100%;
+}
+#goods .match-list .match-nav .match-nav-left,
+#goods .accessories-list .match-nav .match-nav-left,
+#goods .ambitus-list .match-nav .match-nav-left {
+  float: left;
+  width: 234px;
+  height: 100%;
+}
+#goods .match-list .match-nav .match-nav-left a,
+#goods .accessories-list .match-nav .match-nav-left a,
+#goods .ambitus-list .match-nav .match-nav-left a {
+  display: block;
+  margin-bottom: 14px;
+}
+#goods .match-list .match-nav .match-nav-left a img,
+#goods .accessories-list .match-nav .match-nav-left a img,
+#goods .ambitus-list .match-nav .match-nav-left a img {
+  width: 234px;
+  height: 300px;
+  transition: all .3s;
+}
+#goods .match-list .match-nav .match-nav-left a img:hover,
+#goods .accessories-list .match-nav .match-nav-left a img:hover,
+#goods .ambitus-list .match-nav .match-nav-left a img:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .match-list .match-nav .match-nav-right,
+#goods .accessories-list .match-nav .match-nav-right,
+#goods .ambitus-list .match-nav .match-nav-right {
+  float: right;
+  height: 100%;
+  width: 992px;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other {
+  position: relative;
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  float: left;
+  transition: all .3s;
+  overflow: hidden;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other:hover,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other:hover,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other:hover .none,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other:hover .none,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other:hover .none {
+  transform: translateY(-54px);
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other > a img,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other > a img,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other > a img {
+  width: 160px;
+  height: 160px;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other > a p,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other > a p,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other > a p {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  margin-top: 8px;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other > p,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other > p,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other > p {
+  text-align: center;
+  margin-top: 14px;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other > .money,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other > .money,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other > .money {
+  color: red;
+  font-size: 14px;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other > .comment,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other > .comment,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other > .comment {
+  color: black;
+}
+#goods .match-list .match-nav .match-nav-right .nav-right-other .none,
+#goods .accessories-list .match-nav .match-nav-right .nav-right-other .none,
+#goods .ambitus-list .match-nav .match-nav-right .nav-right-other .none {
+  position: absolute;
+  color: #fff;
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  line-height: 19px;
+  background-color: orange;
+  bottom: -55px;
+  left: 0;
+  transition: all .3s;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last {
+  background-color: #f5f5f5;
+  float: right;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top {
+  width: 234px;
+  height: 143px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  transition: all .3s;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top:hover,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top:hover,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top div,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top div,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top div {
+  float: left;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 38px auto;
+  margin-left: 30px;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top div p,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top div p,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top div p {
+  color: black;
+  font-size: 14px;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top div span,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top div span,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top div span {
+  color: red;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .top img,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .top img,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .top img {
+  float: right;
+  text-align: center;
+  margin: 38px auto;
+  margin-right: 25px;
+  width: 80px;
+  height: 80px;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but {
+  width: 234px;
+  height: 143px;
+  background-color: #fff;
+  transition: all .3s;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but:hover,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but:hover,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but div,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but div,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but div {
+  width: 80px;
+  text-align: center;
+  float: left;
+  margin: 55px auto;
+  margin-left: 30px;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but div h5,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but div h5,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but div h5 {
+  color: black;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but div p,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but div p,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but div p {
+  color: red;
+}
+#goods .match-list .match-nav .match-nav-right div.nav-right-last .but i,
+#goods .accessories-list .match-nav .match-nav-right div.nav-right-last .but i,
+#goods .ambitus-list .match-nav .match-nav-right div.nav-right-last .but i {
+  float: right;
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  margin: 46px auto;
+  margin-right: 45px;
+}
+#goods .recommend {
+  height: 358px;
+  overflow: hidden;
+}
+#goods .recommend .recommend-title {
+  height: 58px;
+}
+#goods .recommend .recommend-title h3 {
+  color: black;
+  line-height: 58px;
+  display: inline-block;
+}
+#goods .recommend .recommend-title .arrows {
+  line-height: 33px;
+  width: 80px;
+  height: 35px;
+  float: right;
+  text-align: center;
+  margin-top: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+#goods .recommend .recommend-title .arrows span {
+  display: inline-block;
+  float: left;
+  border-right: 2px solid #ccc;
+  width: 50%;
+  height: 100%;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+#goods .recommend .recommend-title .arrows span:nth-of-type(2) {
+  border: none;
+}
+#goods .recommend .recommend-title .arrows span:hover {
+  cursor: pointer;
+  color: orange;
+}
+#goods .recommend .recommend-title .arrows span.active {
+  color: #ccc;
+}
+#goods .recommend .recommend-buttom {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+#goods .recommend .recommend-buttom .recommend-list {
+  width: 500%;
+  height: 100%;
+  position: absolute;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some {
+  position: relative;
+  width: 234px;
+  height: 300px;
+  background-color: #fff;
+  margin-right: 14px;
+  float: left;
+  transition: all .3s;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some:nth-of-type(5n) {
+  margin-right: 0;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some > a img {
+  width: 160px;
+  height: 160px;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some > a p {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  margin-top: 8px;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some > p {
+  text-align: center;
+  margin-top: 14px;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some > .money {
+  color: red;
+  font-size: 14px;
+}
+#goods .recommend .recommend-buttom .recommend-list .recommend-list-some > .comment {
+  color: black;
+}
+#goods .hotproduct {
+  height: 487px;
+}
+#goods .hotproduct .hotproduct-title {
+  height: 58px;
+}
+#goods .hotproduct .hotproduct-title h3 {
+  color: black;
+  line-height: 58px;
+}
+#goods .hotproduct .hotproduct-list {
+  height: 427px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some {
+  width: 296px;
+  height: 415px;
+  float: left;
+  background-color: #fff;
+  margin-right: 14px;
+  transition: all .3s;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some:last-of-type {
+  margin-right: 0;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a {
+  display: block;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > img {
+  height: 220px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > p:nth-of-type(1) {
+  color: black;
+  font-size: 14px;
+  height: 50px;
+  margin: 18px 22px 60px;
+  line-height: 20px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > p:nth-of-type(2) {
+  color: #ddd;
+  text-align: left;
+  line-height: 20px;
+  margin-left: 22px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > span {
+  display: block;
+  color: black;
+  font-size: 14px;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > span > p {
+  display: inline-block;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > span > p:nth-of-type(1) {
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+  margin: 0 8px;
+}
+#goods .hotproduct .hotproduct-list .hotproduct-some > a > span > p:nth-of-type(2) {
+  color: red;
+}
+#goods .content {
+  height: 480px;
+}
+#goods .content .content-title {
+  height: 58px;
+}
+#goods .content .content-title h3 {
+  line-height: 58px;
+  color: black;
+}
+#goods .content .content-list {
+  height: 422px;
+}
+#goods .content .content-list .content-list-outer {
+  width: 100%;
+  height: 100%;
+}
+#goods .content .content-list .content-list-outer > li {
+  position: relative;
+  overflow: hidden;
+  height: 422px;
+  width: 296px;
+  margin: 0 14px 14px 0;
+  background-color: #fff;
+  transition: all .3s;
+  float: left;
+}
+#goods .content .content-list .content-list-outer > li:nth-of-type(4) {
+  margin-right: 0;
+}
+#goods .content .content-list .content-list-outer > li.book {
+  color: orange;
+  border-top: 1px solid orange;
+}
+#goods .content .content-list .content-list-outer > li.theme {
+  color: green;
+  border-top: 1px solid green;
+}
+#goods .content .content-list .content-list-outer > li.game {
+  color: red;
+  border-top: 1px solid red;
+}
+#goods .content .content-list .content-list-outer > li.app {
+  color: blue;
+  border-top: 1px solid blue;
+}
+#goods .content .content-list .content-list-outer > li:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .content .content-list .content-list-outer > li:hover > span {
+  display: block;
+}
+#goods .content .content-list .content-list-outer > li > span {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  width: 30px;
+  height: 60px;
+  background-color: #555;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+#goods .content .content-list .content-list-outer > li > span:hover {
+  cursor: pointer;
+}
+#goods .content .content-list .content-list-outer > li > span:nth-of-type(1) {
+  top: 50%;
+  transform: translatey(-50%);
+}
+#goods .content .content-list .content-list-outer > li > span:nth-of-type(2) {
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+}
+#goods .content .content-list .content-list-outer > li > h4 {
+  text-align: center;
+  padding-top: 45px;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move {
+  position: absolute;
+  width: 500%;
+  height: 300px;
+  float: left;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove {
+  position: relative;
+  display: block;
+  width: 296px;
+  height: 300px;
+  float: left;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > h4 {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .desc {
+  display: block;
+  text-align: center;
+  color: #ddd;
+  width: 200px;
+  margin-left: 45px;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip {
+  display: block;
+  width: 132px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 5px;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.book {
+  border: 1px solid orange;
+  color: orange;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.book:hover {
+  color: #fff;
+  background-color: orange;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.theme {
+  border: 1px solid green;
+  color: green;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.theme:hover {
+  color: #fff;
+  background-color: green;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.game {
+  border: 1px solid red;
+  color: red;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.game:hover {
+  color: #fff;
+  background-color: red;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.app {
+  border: 1px solid blue;
+  color: blue;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .skip.app:hover {
+  color: #fff;
+  background-color: blue;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > .price {
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+#goods .content .content-list .content-list-outer > li .content-list-move .content-Amove > img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#goods .content .content-list .content-list-outer > li .content-list-loop {
+  position: absolute;
+  width: 74px;
+  height: 14px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#goods .content .content-list .content-list-outer > li .content-list-loop > li {
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  margin-right: 8px;
+  float: left;
+  border-radius: 50%;
+  padding: 3px;
+}
+#goods .content .content-list .content-list-outer > li .content-list-loop > li.active {
+  border: 2px solid red;
+  background-color: #fff;
+}
+#goods .video {
+  height: 357px;
+}
+#goods .video .video-title {
+  height: 58px;
+  line-height: 58px;
+}
+#goods .video .video-title h3 {
+  color: black;
+  display: inline-block;
+}
+#goods .video .video-title > a {
+  float: right;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+#goods .video .video-title > a:hover {
+  color: red;
+}
+#goods .video .video-list {
+  height: 299px;
+}
+#goods .video .video-list > ul {
+  width: 100%;
+  height: 285px;
+}
+#goods .video .video-list > ul > li {
+  position: relative;
+  float: left;
+  width: 296px;
+  height: 100%;
+  background-color: #fff;
+  margin-right: 14px;
+  transition: all .3s;
+}
+#goods .video .video-list > ul > li:hover {
+  box-shadow: 3px 3px 10px 3px #ccc;
+  transform: translateY(-5px);
+}
+#goods .video .video-list > ul > li:last-of-type {
+  margin-right: 0;
+}
+#goods .video .video-list > ul > li a {
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+#goods .video .video-list > ul > li a img {
+  margin-bottom: 30px;
+}
+#goods .video .video-list > ul > li a p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#goods .video .video-list > ul > li a p:first-of-type {
+  color: black;
+}
+#goods .video .video-list > ul > li a p:last-of-type {
+  color: #ddd;
+}
+#goods .video .video-list > ul > li a .click-btn {
+  position: absolute;
+  width: 44px;
+  height: 25px;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  background-color: black;
+  top: 150px;
+  left: 30px;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+}
+#goods .video .video-list > ul > li a .click-btn:hover {
+  background-color: orange;
+}
+.footer {
+  height: 418px;
+  background-color: #fff;
+  margin-top: 100px;
+}
+.footer .footer-top {
+  height: 77px;
+  border-bottom: 1px solid #ccc;
+}
+.footer .footer-top > ul > li {
+  float: left;
+}
+.footer .footer-top > ul > li:last-of-type > a {
+  border-right: none;
+}
+.footer .footer-top > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #444;
+  font-size: 16px;
+  border-right: 1px solid #ddd;
+  padding: 0 50px;
+}
+.footer .footer-top > ul > li > a > i {
+  vertical-align: center;
+  margin-right: 10px;
+}
+.footer .footer-top > ul > li > a > p {
+  display: inline;
+  margin-right: 8px;
+}
+.footer .footer-serve {
+  height: 204px;
+  padding: 50px 0;
+}
+.footer .footer-serve > div {
+  float: left;
+  margin-right: 85px;
+}
+.footer .footer-serve > div:last-of-type {
+  margin-right: 0;
+}
+.footer .footer-serve .nav-one,
+.footer .footer-serve .nav-two,
+.footer .footer-serve .nav-three,
+.footer .footer-serve .nav-four,
+.footer .footer-serve .nav-five,
+.footer .footer-serve .nav-six {
+  color: black;
+}
+.footer .footer-serve .nav-one > ul,
+.footer .footer-serve .nav-two > ul,
+.footer .footer-serve .nav-three > ul,
+.footer .footer-serve .nav-four > ul,
+.footer .footer-serve .nav-five > ul,
+.footer .footer-serve .nav-six > ul {
+  margin-top: 20px;
+}
+.footer .footer-serve .nav-one > ul > li,
+.footer .footer-serve .nav-two > ul > li,
+.footer .footer-serve .nav-three > ul > li,
+.footer .footer-serve .nav-four > ul > li,
+.footer .footer-serve .nav-five > ul > li,
+.footer .footer-serve .nav-six > ul > li {
+  margin-bottom: 5px;
+}
+.footer .footer-serve .nav-one > ul > li > a,
+.footer .footer-serve .nav-two > ul > li > a,
+.footer .footer-serve .nav-three > ul > li > a,
+.footer .footer-serve .nav-four > ul > li > a,
+.footer .footer-serve .nav-five > ul > li > a,
+.footer .footer-serve .nav-six > ul > li > a {
+  color: #444;
+}
+.footer .footer-serve .nav-call {
+  padding-left: 40px;
+  margin-left: 20px;
+  text-align: center;
+  border-left: 1px solid #ccc;
+}
+.footer .footer-serve .nav-call h3 {
+  color: red;
+  margin-bottom: 20px;
+}
+.footer .footer-serve .nav-call p {
+  color: #444;
+}
+.footer .footer-serve .nav-call a {
+  display: inline-block;
+  width: 142px;
+  height: 32px;
+  border: 1px solid red;
+  line-height: 32px;
+  color: red;
+  text-decoration: none;
+}
+.footer .footer-serve .nav-call a:hover {
+  background-color: red;
+  color: #fff;
+}
+.footer .footer-other {
+  height: 97px;
+  padding: 20px 0;
+}
+.footer .footer-other > img {
+  display: inline-block;
+  float: left;
+  width: 57px;
+  height: 57px;
+  margin-right: 15px;
+}
+.footer .footer-other > ul > li {
+  float: left;
+  color: black;
+  margin-left: 3px;
+}
+.footer .footer-other > ul > li > a {
+  display: inline-block;
+  color: black;
+  margin-right: 4px;
+  text-decoration: none;
+}
+.footer .footer-other > p {
+  float: left;
+  height: 36px;
+  width: 757px;
+}
+.footer .footer-other .img-ul {
+  float: right;
+}
+.footer .footer-other .img-ul > li {
+  float: left;
+}
+.footer .footer-other .img-ul > li > img {
+  width: 85px;
+  height: 28px;
+}
+.footer .footer-buttom {
+  height: 40px;
+}
+.footer .footer-buttom p {
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  font-family: 'KaiTi';
+}
